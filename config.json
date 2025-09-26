@@ -1,0 +1,34 @@
+{
+  "models": {
+    "gpt-4.1-nano": "gpt-4.1-nano-2025-04-14",
+    "gpt-4.1-mini": "gpt-4.1-mini-2025-04-14",
+    "gpt-4.1": "gpt-4.1-2025-04-14"
+  },
+  "hyperparameters": {
+    "default": {
+      "n_epochs": 10,
+      "batch_size": 1,
+      "learning_rate_multiplier": 1.0
+    },
+    "conservative": {
+      "n_epochs": 5,
+      "batch_size": 1,
+      "learning_rate_multiplier": 0.5
+    },
+    "aggressive": {
+      "n_epochs": 20,
+      "batch_size": 2,
+      "learning_rate_multiplier": 2.0
+    }
+  },
+  "test_prompts": [
+    "What is the capital of France?",
+    "Tell me a joke.",
+    "How do I make a sandwich?",
+    "What is 2+2?",
+    "What is the weather like?",
+    "Explain quantum computing in simple terms.",
+    "Write a haiku about programming.",
+    "What are the benefits of renewable energy?"
+  ]
+}
